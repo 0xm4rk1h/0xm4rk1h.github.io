@@ -1,0 +1,91 @@
+#SECTION_MAIN_DESCRIPTION {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 70vh;}
+
+.SECTION_MAIN_DESCRIPTION_AVATAR {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;}
+
+.SECTION_MAIN_DESCRIPTION_WHOAMI {
+    align-self: center;
+    text-align: center;
+    width: 26%;
+    margin-top: 2%;}
+
+.SECTION_MAIN_DESCRIPTION_WHOAMI_NAME {
+    font-size: 3rem; 
+    text-align: center;}
+    
+
+.SECTION_MAIN_DESCRIPTION_WHOAMI_ME{
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+    font-weight: bold;
+    font-style: italic;}
+
+.SECTION_MAIN_DESCRIPTION_WHOAMI_SMALL_TEXT{
+    font-size: 1.1rem; 
+    color: #000000; 
+    text-align: center;}
+
+#SECTION_MAIN_DESCRIPTION_LINKS{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;}
+
+.SECTION_MAIN_DESCRIPTION_LINKS_ICON {
+    cursor: pointer; 
+    height: 2rem;}
+
+@media screen and (max-width: 1600px){
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_NAME{
+        font-size: 2.5rem;}}
+
+@media screen and (max-width: 1200px){
+    section{
+        height: fit-content;
+        margin: 0 5%;}
+
+    #SECTION_MAIN_DESCRIPTION{
+        display: block; 
+        margin-top: 50px;}
+
+    .SECTION_MAIN_DESCRIPTION_AVATAR{
+        width: 275px; 
+        height: 275px; 
+        margin: 0 auto 2rem;}
+
+    .SECTION_MAIN_DESCRIPTION_WHOAMI{
+        text-align: center; 
+        justify-self: center; 
+        width: 100%;}
+    
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_NAME{
+        font-size: 2rem;}}
+
+@media screen and (max-width: 600px){
+    .SECTION_MAIN_DESCRIPTION_AVATAR {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;}
+
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_NAME{
+        font-size: 2rem;}}
+
+@media screen and (max-width: 400px){
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_SMALL_TEXT{
+        font-size: 1rem;}
+
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_NAME{
+        font-size: 1.7rem;}
+
+    .SECTION_MAIN_DESCRIPTION_WHOAMI_ME{
+        font-size: 1.1rem;}}

@@ -1,0 +1,100 @@
+header{
+    background-color: #000000;}
+
+li{
+    list-style: none;}
+
+.NAV_BAR_NAV{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;}
+
+.NAV_BAR_LOGO{
+    flex: 1;}
+
+.NAV_BAR_LOGO img{
+    height: 48px; 
+    width: 48px;}
+
+.NAV_BAR_LOGO a{
+    transition: 0.7s ease;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial;
+    gap: 10px;
+    width: 0%;}
+
+.NAV_BAR_LOGO a:hover{
+    text-decoration: underline; 
+    text-underline-offset: 0.5rem; 
+    text-decoration-color: #f1f1f1;}
+
+.NAV_BAR_UL{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;}
+
+.NAV_BAR_LINK{
+    transition: 0.7s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1.1em;}
+
+.NAV_BAR_LINK:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #f1f1f1;}
+
+.NAV_BAR_HAMBURGER_MENU{
+    display: none; 
+    cursor: pointer; 
+    border: 3px solid #000000;}
+
+.NAV_BAR_HAMBURGER_MENU_ICON{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #ffffff;}
+    
+@media(max-width:768px){
+    .NAV_BAR_HAMBURGER_MENU{display:block;}
+    .NAV_BAR_HAMBURGER_MENU.active .NAV_BAR_HAMBURGER_MENU_ICON:nth-child(2){opacity: 0;}
+    .NAV_BAR_HAMBURGER_MENU.active .NAV_BAR_HAMBURGER_MENU_ICON:nth-child(1){transform: translateY(8px) rotate(45deg);}
+    .NAV_BAR_HAMBURGER_MENU.active .NAV_BAR_HAMBURGER_MENU_ICON:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
+
+    .NAV_BAR_UL{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000000ad;
+        width: 100%;
+        text-align: center;
+        border-top-color: #000000;
+        border-top-style: solid;
+        border-top-width: medium;
+        border-bottom-color: #000000;
+        border-bottom-style: solid;
+        border-bottom-width: medium;}
+
+    .NAV_BAR_UL.active{
+        left: 0;}
+
+    .NAV_BAR_LI{
+        margin: 16px 0;}
+
+    .NAV_BAR_LINK{
+        color: #ffffff;}}

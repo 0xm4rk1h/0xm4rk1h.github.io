@@ -1,0 +1,68 @@
+.TABLE_CONTAINER {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 2%;}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black ;
+    width: 100%;
+    table-layout: fixed;
+    margin: 2%;
+}
+
+table caption{
+    font-size: 1.5em;}
+
+table tr{
+    background-color: black; 
+    border: 2px solid black;}
+
+table th{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;}
+
+table th, table td{
+    padding: 0.2em; 
+    text-align: left;}
+
+td[data-label]{
+    background-color: white;}
+
+@media screen and (max-width: 768px){
+    table{
+        border: 0;}
+
+    table thead {
+        overflow: hidden; 
+        position: absolute; 
+        width: 1px;}
+
+    table tr {
+        display: block; 
+        margin-bottom: 0.5em;}
+    
+    table td {
+      border-bottom: 2px solid #000000;
+      display: block;
+      font-size: 1em;
+      text-align: left;}
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 100%;}
+
+    table td:last-child {
+        border-bottom: 0;}}
+
+@media screen and (max-width: 500px){
+    table td::before {
+        margin-right:100%;}
+
+    table td:last-child {
+        border-bottom: 0;}}
